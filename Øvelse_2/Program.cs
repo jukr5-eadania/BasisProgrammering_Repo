@@ -30,7 +30,7 @@ namespace Øvelse_2
             Console.Write(" --- You Pressed ");
             Console.WriteLine(cki.Key.ToString());
 
-            //test
+
 
             //Section below writes user input without variables
             
