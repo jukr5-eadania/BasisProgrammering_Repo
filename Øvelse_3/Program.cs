@@ -14,11 +14,18 @@ namespace Øvelse_3
             Console.WriteLine("What is your name?");
             string name = Console.ReadLine();
 
+            //Loops until user inputs a name (Can't be empty)
+            while (string.IsNullOrEmpty(name))
+            {
+                Console.WriteLine("Name Can't be empty! Input you name once more");
+                name = Console.ReadLine();
+            }
+
             //Asks for the users age
             Console.WriteLine("How old are you?");
             byte age = Convert.ToByte(Console.ReadLine());
 
-            //Asks for the users phone number
+           //Asks for the users phone number
             Console.WriteLine("What is your phone number");
             int phoneNumber = Convert.ToInt32(Console.ReadLine());
 
