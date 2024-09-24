@@ -12,7 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_4", "Øvelse_4\Øvelse_4.csproj", "{1B87D872-ED4B-436E-A5AE-C1EB4436CDFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_6", "Øvelse_5\Øvelse_6.csproj", "{8D592E50-4A03-42F2-A771-0BC75CF69097}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obl_Øvelse_Variabler&DataTyper", "Obl_Øvelse_Variabler&DataTyper\Obl_Øvelse_Variabler&DataTyper.csproj", "{61F6EB56-3CB5-4AA0-8670-4E4042B4DC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_7", "Øvelse_7\Øvelse_7.csproj", "{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +47,10 @@ Global
 		{61F6EB56-3CB5-4AA0-8670-4E4042B4DC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61F6EB56-3CB5-4AA0-8670-4E4042B4DC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61F6EB56-3CB5-4AA0-8670-4E4042B4DC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
