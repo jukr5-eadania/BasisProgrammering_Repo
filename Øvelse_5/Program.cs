@@ -36,15 +36,29 @@ namespace Øvelse_5
                         passwordnew = Console.ReadLine();
                     }
 
+                    Console.WriteLine("Ny bruger oprettet, fortsætter til log ind");
+
                     Console.WriteLine("Indtast dit brugernavn");
                     if (Console.ReadLine() == username || Console.ReadLine() == usernamenew)
                     {
                         Console.WriteLine("Indtast dit kodeord");
-                        if (Console.ReadLine() == password)
+                        if (Console.ReadLine() == password || Console.ReadLine() == passwordnew)
                         {
                             Console.WriteLine("Velkommen " + username);
                             Console.ReadLine();
                         }
+
+                        else
+                        {
+                            Console.WriteLine("Forkert kodeord, Genstart programmet for at prøve igen");
+                            Console.ReadLine();
+                        }
+                    }
+
+                    else
+                    {
+                        Console.WriteLine("Forkert brugernavn, Genstart programmet for at prøve igen");
+                        Console.ReadLine();
                     }
                 }
 
