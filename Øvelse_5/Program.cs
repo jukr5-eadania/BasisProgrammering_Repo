@@ -14,52 +14,61 @@ namespace Øvelse_5
         {
             string username = "bruh64";
             string password = "password";
-            string usernamenew = "";
-            string passwordnew = "";
+            string language;
+            string ageLimit;
+            string login;
 
             Console.WriteLine("Dansk eller/or English?");
+            language = Console.ReadLine();
 
-            if (Console.ReadLine() == "Dansk")
+            if (language == "Dansk")
             {
                 Console.WriteLine("Velkommen, er du over 18 år gammel?");
+                ageLimit = Console.ReadLine();
 
-                if (Console.ReadLine() == "Ja")
+                if (ageLimit == "Ja")
                 {
                     Console.WriteLine("Log ind eller Opret bruger?");
+                    login =Console.ReadLine();
 
-                    if (Console.ReadLine() == "Opret bruger")
+                    if (login == "Opret bruger")
                     {
                         Console.WriteLine("Indtast dit brugernavn");
-                        usernamenew = Console.ReadLine();
+                        username = Console.ReadLine();
 
                         Console.WriteLine("Indtast dit kodeord");
-                        passwordnew = Console.ReadLine();
+                        password = Console.ReadLine();
                     }
 
-                    Console.WriteLine("Ny bruger oprettet, fortsætter til log ind");
+                    Console.WriteLine("Ny bruger oprettet, Log ind?");
+                    login = Console.ReadLine();
 
-                    Console.WriteLine("Indtast dit brugernavn");
-                    if (Console.ReadLine() == username || Console.ReadLine() == usernamenew)
+                    if (login == "Log ind")
                     {
-                        Console.WriteLine("Indtast dit kodeord");
-                        if (Console.ReadLine() == password || Console.ReadLine() == passwordnew)
+                        Console.WriteLine("Indtast dit brugernavn");
+                        if (Console.ReadLine() == username)
                         {
-                            Console.WriteLine("Velkommen " + username);
-                            Console.ReadLine();
+                            Console.WriteLine("Indtast dit kodeord");
+                            if (Console.ReadLine() == password)
+                            {
+                                Console.WriteLine("Velkommen " + username);
+                                Console.ReadLine();
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Forkert kodeord, Genstart programmet for at prøve igen");
+                                Console.ReadLine();
+                            }
                         }
 
                         else
                         {
-                            Console.WriteLine("Forkert kodeord, Genstart programmet for at prøve igen");
+                            Console.WriteLine("Forkert brugernavn, Genstart programmet for at prøve igen");
                             Console.ReadLine();
                         }
                     }
-
-                    else
-                    {
-                        Console.WriteLine("Forkert brugernavn, Genstart programmet for at prøve igen");
-                        Console.ReadLine();
-                    }
+                    
                 }
 
                 else
@@ -69,27 +78,59 @@ namespace Øvelse_5
                 }
             }
 
-            else
+            if (language == "English")
             {
-                Console.WriteLine("Welcome, Are you over the age of 18?");
+                Console.WriteLine("Welcome, are you over the age of 18?");
+                ageLimit = Console.ReadLine();
 
-                if (Console.ReadLine() == "Yes")
+                if (ageLimit == "Yes")
                 {
-                    Console.WriteLine("Enter your username");
-                    if (Console.ReadLine() == username)
+                    Console.WriteLine("Log in or Create user?");
+                    login = Console.ReadLine();
+
+                    if (login == "Create user")
                     {
-                        Console.WriteLine("Enter your password");
-                        if (Console.ReadLine() == password)
+                        Console.WriteLine("Insert username");
+                        username = Console.ReadLine();
+
+                        Console.WriteLine("Inser password");
+                        password = Console.ReadLine();
+                    }
+
+                    Console.WriteLine("New user added, Log in?");
+                    login = Console.ReadLine();
+
+                    if (login == "Log in")
+                    {
+                        Console.WriteLine("Insert username");
+                        if (Console.ReadLine() == username)
                         {
-                            Console.WriteLine("Welcome " + username);
+                            Console.WriteLine("Insert password");
+                            if (Console.ReadLine() == password)
+                            {
+                                Console.WriteLine("Welcome " + username);
+                                Console.ReadLine();
+                            }
+
+                            else
+                            {
+                                Console.WriteLine("Wrong password, Restart program to try again");
+                                Console.ReadLine();
+                            }
+                        }
+
+                        else
+                        {
+                            Console.WriteLine("Wrong username, Restart program to try again");
                             Console.ReadLine();
                         }
                     }
+
                 }
 
                 else
                 {
-                    Console.WriteLine("Sorry, You are not old enough to enter");
+                    Console.WriteLine("Sorry, you must be over the age of 18 to login");
                     Thread.Sleep(2000);
                 }
             }

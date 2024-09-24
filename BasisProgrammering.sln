@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_3", "Øvelse_3\Øve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_4", "Øvelse_4\Øvelse_4.csproj", "{1B87D872-ED4B-436E-A5AE-C1EB4436CDFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_5", "Øvelse_5\Øvelse_5.csproj", "{8D592E50-4A03-42F2-A771-0BC75CF69097}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_6", "Øvelse_5\Øvelse_6.csproj", "{8D592E50-4A03-42F2-A771-0BC75CF69097}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
