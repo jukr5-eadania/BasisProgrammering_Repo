@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obl_Øvelse_Variabler&DataT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_7", "Øvelse_7\Øvelse_7.csproj", "{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_8", "Øvelse_8\Øvelse_8.csproj", "{F74D0600-BF42-4538-AA9D-E3C9A4F2566C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E05AC0C5-2EFA-4F2E-A839-19A2F0741EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74D0600-BF42-4538-AA9D-E3C9A4F2566C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74D0600-BF42-4538-AA9D-E3C9A4F2566C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74D0600-BF42-4538-AA9D-E3C9A4F2566C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74D0600-BF42-4538-AA9D-E3C9A4F2566C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
