@@ -41,6 +41,22 @@ namespace Øvelse_8
 
             }
 
+            //assign variables
+            int health = 100;
+            int damage = 0;
+
+            //Loop that allows the user to type the amount of damage they want to do to an enemy
+            while (health >= 0)
+            {
+                Console.WriteLine("The enemy's health is at " + health);
+                Console.WriteLine("How much damage do you want to do?");
+                damage = Convert.ToInt32(Console.ReadLine());
+                health -= damage;
+            }
+
+            //Celebratory text
+            Console.WriteLine("The Enemy is dead! You did it!");
+            Console.ReadLine();
         }
     }
 }
