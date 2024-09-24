@@ -20,7 +20,7 @@ namespace Obl_Øvelse_Variabler_DataTyper
             Random rnd = new Random();
             int randomNumber = rnd.Next(1, 101);
 
-            Console.WriteLine(randomNumber);
+            //Console.WriteLine(randomNumber);
 
             Console.WriteLine("WELCOME");
             Thread.Sleep(milliseconds);
@@ -44,11 +44,14 @@ namespace Obl_Øvelse_Variabler_DataTyper
 
             if (difference == 0)
             {
-                Console.WriteLine("Congratulations!!! " + name + " You won the big big price of...");
+                Console.WriteLine("Congratulations!!! ");
+                Thread.Sleep(milliseconds);
+                Console.WriteLine(name + " you won the big big price of...");
                 Thread.Sleep(milliseconds);
                 Console.WriteLine("NOTHING!!!");
                 Thread.Sleep(milliseconds);
-                Console.WriteLine("Now, get out... Use the enter key to leave");
+                Console.WriteLine("Now, get out... You're no fun...");
+                Console.WriteLine("Use the enter key to leave");
                 Console.ReadLine();
             }
 
