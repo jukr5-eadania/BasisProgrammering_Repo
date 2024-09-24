@@ -20,7 +20,7 @@ namespace Obl_Øvelse_Variabler_DataTyper
             Random rnd = new Random();
             int randomNumber = rnd.Next(1, 101);
 
-            //Console.WriteLine(randomNumber);
+            Console.WriteLine(randomNumber);
 
             Console.WriteLine("WELCOME");
             Thread.Sleep(milliseconds);
