@@ -10,19 +10,39 @@ namespace Øvelse_9
     {
         static void Main(string[] args)
         {
+            //Assign variables
             int myInt;
             string myInput = string.Empty;
 
-            while (true)
+            //Parse:
+            //Reads user input
+            myInput = Console.ReadLine();
+
+            //Parses user input to int
+            myInt = int.Parse(myInput);
+
+            //Writes parsed user input
+            Console.WriteLine(myInt);
+
+            //TryParse:
+            //Reads user input
+            myInput = Console.ReadLine();
+
+            //TryParses user input
+            if (int.TryParse(myInput, out myInt))
             {
-                myInput = Console.ReadLine();
+                //If TryParse is successfull it writes result
+                Console.WriteLine("myInt is: " + myInt);
 
-                myInt = int.Parse(myInput);
-
-                Console.WriteLine(myInt);
-                Console.ReadLine();
+            } else
+            {
+                //If TryParse is unsuccessfull it writes failure
+                Console.WriteLine("Could not convert myInput, myInt is not valid");
 
             }
+
+            //Pauses the program
+            Console.ReadLine();
 
         }
     }
