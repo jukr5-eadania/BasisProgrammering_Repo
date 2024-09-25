@@ -9,12 +9,19 @@ namespace Buggy_Code
     internal class Program
     {
         static int First = 12;
-        static string Message = "Hello World";
-        static int numbre = 1;
+        static string message = "Hello World";
+        static int number = 1;
 
         static void Main(string[] args)
         {
-
+            Console.WriteLine(AddNumbers(1, 2));
+            WriteMessage(message);
+            CountToNumber(5);
+            WriteMessageWithCaps(false, message);
+            Console.WriteLine(CalculateAverageValue(10, 20, 30));
+            CalculateSum(3);
+            WriteNumberWithSwitchCase();
+            Console.ReadLine();
         }
 
         /// <summary>
@@ -25,7 +32,7 @@ namespace Buggy_Code
         /// <returns></returns>
         static int AddNumbers(int first, int second)
         {
-            return First + second;
+            return first + second;
         }
 
         /// <summary>
@@ -34,7 +41,7 @@ namespace Buggy_Code
         /// <param name="message">beskeden, som skrives ud</param>
         static void WriteMessage(string message)
         {
-            Console.WriteLine(Message);
+            Console.WriteLine(message);
         }
 
         /// <summary>
@@ -43,7 +50,7 @@ namespace Buggy_Code
         /// <param name="number">tallet der skal tælles til</param>
         static void CountToNumber(int number)
         {
-            for (int i = 0; i < numbre; i++)
+            for (int i = 0; i < number; i++)
             {
                 Console.WriteLine(i);
             }
@@ -56,7 +63,7 @@ namespace Buggy_Code
         /// <param name="message">Beskeden der skal skrives</param>
         static void WriteMessageWithCaps(bool UseCaps, string message)
         {
-            if (UseCaps = true)
+            if (UseCaps == true)
             {
                 Console.WriteLine(message.ToUpper());
             }
@@ -76,7 +83,7 @@ namespace Buggy_Code
         static float CalculateAverageValue(float first, float second, float third)
         {
             float sum = first + second + third;
-            float average = sum / 2;
+            float average = sum / 3;
             return average;
         }
 
@@ -92,7 +99,7 @@ namespace Buggy_Code
                 sum += i;
                 Console.WriteLine($"Adding {i}, sum is now: {sum}");
             }
-            return (sum + 1);
+            return (sum);
         }
 
         /// <summary>
@@ -101,7 +108,7 @@ namespace Buggy_Code
         static void WriteNumberWithSwitchCase()
         {
             Console.WriteLine("Enter a number between 1 and 3");
-            int number = Console.Read();
+            int number = int.Parse(Console.ReadLine());
 
             switch (number)
             {
