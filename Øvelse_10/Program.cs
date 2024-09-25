@@ -17,7 +17,9 @@ namespace Øvelse_10
             Console.ReadLine();
         }
 
-        //Function that when called writes "Aloha"
+        /// <summary>
+        /// Writes "Aloha" to the console
+        /// </summary>
         static void WriteSomething()
         {
             Console.WriteLine("Aloha");
@@ -33,7 +35,10 @@ namespace Øvelse_10
 
         }
 
-        //Function that when called writes a message
+        /// <summary>
+        /// Writes a message based on parameters
+        /// </summary>
+        /// <param name="message"></param>
         static void WriteSomething(string message)
         {
             Console.WriteLine(message);
@@ -50,7 +55,10 @@ namespace Øvelse_10
 
         }
 
-        //Function that returns an int
+        /// <summary>
+        /// Returns an int
+        /// </summary>
+        /// <returns></returns>
         static int ReturnSomething()
         {
             return 10;
@@ -69,7 +77,12 @@ namespace Øvelse_10
             
         }
 
-        //Function that adds two numbers
+        /// <summary>
+        /// Adds two numbers
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <returns></returns>
         static int Addition(int number1, int number2)
         {
             int result;
@@ -79,7 +92,12 @@ namespace Øvelse_10
             return result;
         }
 
-        //Function that subtracts two numbers
+        /// <summary>
+        /// Subtracts two numbers
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <returns></returns>
         static int Subtraction(int number1, int number2)
         {
             int result;
@@ -89,7 +107,12 @@ namespace Øvelse_10
             return result;
         }
 
-        //Function that multiplies two numbers
+        /// <summary>
+        /// Multiplies two numbers
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <returns></returns>
         static int Multiplication(int number1, int number2)
         {
             int result;
@@ -99,7 +122,12 @@ namespace Øvelse_10
             return result;
         }
 
-        //Function that divides two numbers
+        /// <summary>
+        /// Divides two numbers
+        /// </summary>
+        /// <param name="number1"></param>
+        /// <param name="number2"></param>
+        /// <returns></returns>
         static float Division(float number1, float number2)
         {
             float result;
@@ -119,7 +147,13 @@ namespace Øvelse_10
 
         }
 
-        //Function that solves below equation
+        /// <summary>
+        /// Solves the equation: (X + B * 10) / Y
+        /// </summary>
+        /// <param name="X">First number</param>
+        /// <param name="B">Second number</param>
+        /// <param name="Y">Third number</param>
+        /// <returns></returns>
         static float TheBigSolve(float X, float B, float Y)
         {
             float result;
