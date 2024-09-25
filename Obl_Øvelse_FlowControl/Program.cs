@@ -36,17 +36,17 @@ namespace Obl_Øvelse_FlowControl
                 {
                     case 1:
                         computerChoice = "Rock";
-                        Console.WriteLine("The computer choose Rock!");
+                        //Console.WriteLine("The computer choose Rock!");
                         break;
 
                     case 2:
                         computerChoice = "Paper";
-                        Console.WriteLine("The computer choose Paper!");
+                        //Console.WriteLine("The computer choose Paper!");
                         break;
 
                     case 3:
                         computerChoice = "Scicors";
-                        Console.WriteLine("The computer choose Scicors!");
+                        //Console.WriteLine("The computer choose Scicors!");
                         break;
                 }
 
