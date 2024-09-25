@@ -47,23 +47,36 @@ namespace Øvelse_9
             Console.ReadLine();
             */
 
-            Byte castingByte;
-            int castingInt;
-
-            castingInt = 300;
             /*
+            //Casting int to byte (Overflow)
+            //Assign variables
+            Byte castingByte;
+            int castingInt = 300;
+
+            //Casting int to byte with overflow without check
             castingByte = (byte)castingInt;
 
+            //Writes overflowed byte and pauses program
             Console.WriteLine(castingByte);
             Console.ReadLine();
-            */
+            
+            //Checks overflowed byte which gives an error
             checked
             {
                 castingByte = (byte)castingInt;
             }
+            */
 
-            Console.WriteLine(castingByte);
+            //Casting float to int
+            //Assign variables
+            float myfloat = 2322.223f;
+            int myInt;
+
+            myInt = (int)myfloat;
+
+            Console.WriteLine(myInt);
             Console.ReadLine();
+
         }
     }
 }
