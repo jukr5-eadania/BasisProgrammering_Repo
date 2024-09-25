@@ -10,6 +10,8 @@ namespace Øvelse_9
     {
         static void Main(string[] args)
         {
+            /*
+            //Parse and TryParse
             //Assign variables
             int myInt;
             string myInput = string.Empty;
@@ -43,7 +45,25 @@ namespace Øvelse_9
 
             //Pauses the program
             Console.ReadLine();
+            */
 
+            Byte castingByte;
+            int castingInt;
+
+            castingInt = 300;
+            /*
+            castingByte = (byte)castingInt;
+
+            Console.WriteLine(castingByte);
+            Console.ReadLine();
+            */
+            checked
+            {
+                castingByte = (byte)castingInt;
+            }
+
+            Console.WriteLine(castingByte);
+            Console.ReadLine();
         }
     }
 }
