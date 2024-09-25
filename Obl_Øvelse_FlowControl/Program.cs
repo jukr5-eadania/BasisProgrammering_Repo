@@ -11,6 +11,7 @@ namespace Obl_Øvelse_FlowControl
     {
         static void Main(string[] args)
         {
+            //Assigning variables
             bool playing = true;
             int roundCounter = 1;
             int playerWins = 0;
@@ -22,16 +23,21 @@ namespace Obl_Øvelse_FlowControl
             string playerChoice = string.Empty;
             Random rnd = new Random();
 
-            Console.WriteLine("Welcome to rock, paper, Scicors!");
+            //Writes welcome message
+            Console.WriteLine("Welcome to rock, paper, Scissors!");
             Console.WriteLine("At any time write Quit to exit the program");
 
+            //While loop
             while (playing == true)
             {
+                //Waits 2 seconds and randomizes computer choice
                 Thread.Sleep(milliseconds);
                 computerRandom = rnd.Next(1, 4);
 
+                //Writes empty pace
                 Console.WriteLine("");
 
+                //Chooses computer choice based on random input
                 switch (computerRandom)
                 {
                     case 1:
@@ -45,18 +51,19 @@ namespace Obl_Øvelse_FlowControl
                         break;
 
                     case 3:
-                        computerChoice = "Scicors";
-                        //Console.WriteLine("The computer choose Scicors!");
+                        computerChoice = "Scissors";
+                        //Console.WriteLine("The computer choose Scissors!");
                         break;
                 }
-
+                
+                //Writes round and wins info
                 Console.WriteLine("Round: " + roundCounter);
                 Console.WriteLine("Player Wins: " + playerWins);
                 Console.WriteLine("Computer Wins: " + computerWins);
                 Console.WriteLine("Ties: " + Ties);
-                Console.WriteLine("Rock, Paper, Scicors?");
+                Console.WriteLine("Rock, Paper, Scissors?");
                 
-                
+                //Allows the player to quit if they write Quit
                 playerChoice = Console.ReadLine();
 
                 if (playerChoice == "Quit")
@@ -64,6 +71,7 @@ namespace Obl_Øvelse_FlowControl
                     return;
                 }
 
+                //Results based on computer and player choice and applies points depending on who wins
                 if (playerChoice == computerChoice)
                 {
                     Console.WriteLine("You Choose: " + playerChoice);
@@ -73,11 +81,11 @@ namespace Obl_Øvelse_FlowControl
                     Ties++;
                 }
 
-                if (playerChoice == "Rock" && computerChoice == "Scicors")
+                if (playerChoice == "Rock" && computerChoice == "Scissors")
                 {
                     Console.WriteLine("You Choose: " + playerChoice);
                     Console.WriteLine("The Computer Choose: " + computerChoice);
-                    Console.WriteLine("Rock beats Scicors");
+                    Console.WriteLine("Rock beats Scissors");
                     Console.WriteLine("Player Wins!");
                     playerWins++;
                 }
@@ -91,11 +99,11 @@ namespace Obl_Øvelse_FlowControl
                     playerWins++;
                 }
 
-                if (playerChoice == "Scicors" && computerChoice == "Paper")
+                if (playerChoice == "Scissors" && computerChoice == "Paper")
                 {
                     Console.WriteLine("You Choose: " + playerChoice);
                     Console.WriteLine("The Computer Choose: " + computerChoice);
-                    Console.WriteLine("Scicors beats Paper");
+                    Console.WriteLine("Scissors beats Paper");
                     Console.WriteLine("Player Wins!");
                     playerWins++;
                 }
@@ -109,24 +117,25 @@ namespace Obl_Øvelse_FlowControl
                     computerWins++;
                 }
 
-                if (playerChoice == "Paper" && computerChoice == "Scicors")
+                if (playerChoice == "Paper" && computerChoice == "Scissors")
                 {
                     Console.WriteLine("You Choose: " + playerChoice);
                     Console.WriteLine("The Computer Choose: " + computerChoice);
-                    Console.WriteLine("Scicors beats Paper");
+                    Console.WriteLine("Scissors beats Paper");
                     Console.WriteLine("Computer Wins!");
                     computerWins++;
                 }
 
-                if (playerChoice == "Scicors" && computerChoice == "Rock")
+                if (playerChoice == "Scissors" && computerChoice == "Rock")
                 {
                     Console.WriteLine("You Choose: " + playerChoice);
                     Console.WriteLine("The Computer Choose: " + computerChoice);                    
-                    Console.WriteLine("Rock beats Scicors");
+                    Console.WriteLine("Rock beats Scissors");
                     Console.WriteLine("Computer Wins!");
                     computerWins++;
                 }
 
+                //adds one to round counter
                 roundCounter++;
             }
 
