@@ -10,6 +10,20 @@ namespace Øvelse_9
     {
         static void Main(string[] args)
         {
+            int myInt;
+            string myInput = string.Empty;
+
+            while (true)
+            {
+                myInput = Console.ReadLine();
+
+                myInt = int.Parse(myInput);
+
+                Console.WriteLine(myInt);
+                Console.ReadLine();
+
+            }
+
         }
     }
 }
