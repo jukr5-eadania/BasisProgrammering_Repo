@@ -53,10 +53,11 @@ namespace Øvelse_8
                 damage = Convert.ToInt32(Console.ReadLine());
                 health -= damage;
             }
-
+            
             //Celebratory text
             Console.WriteLine("The Enemy is dead! You did it!");
             Console.ReadLine();
+
         }
     }
 }
