@@ -56,7 +56,7 @@ namespace Øvelse_10
             return 10;
         }
         */
-
+        /*
         static void Main(string[] args)
         {
             //Lav funktioner til at udregne følgende: Lægge 2 tal sammen, Trække 2 tal fra hinanden, Gange 2 tal sammen, Dividere 2 tal
@@ -108,6 +108,25 @@ namespace Øvelse_10
 
             return result;
         }
+        */
 
+        static void Main(string[] args)
+        {
+            //Lav en funktion der kan løse følgende matematisk udtryk og returnere resultatet: (X + B * 10) / Y
+            //Calls function and pauses
+            Console.WriteLine(TheBigSolve(7, 6, 3));
+            Console.ReadLine();
+
+        }
+
+        //Function that solves below equation
+        static float TheBigSolve(float X, float B, float Y)
+        {
+            float result;
+
+            result = (X + B * 10) / Y;
+
+            return result;
+        }
     }
 }
