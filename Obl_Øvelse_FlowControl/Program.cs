@@ -30,6 +30,8 @@ namespace Obl_Øvelse_FlowControl
                 Thread.Sleep(milliseconds);
                 computerRandom = rnd.Next(1, 4);
 
+                Console.WriteLine("");
+
                 switch (computerRandom)
                 {
                     case 1:
@@ -53,6 +55,8 @@ namespace Obl_Øvelse_FlowControl
                 Console.WriteLine("Computer Wins: " + computerWins);
                 Console.WriteLine("Ties: " + Ties);
                 Console.WriteLine("Rock, Paper, Scicors?");
+                
+                
                 playerChoice = Console.ReadLine();
 
                 if (playerChoice == "Quit")
@@ -62,6 +66,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == computerChoice)
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);
                     Console.WriteLine("You and the computer picked the same: " + computerChoice);
                     Console.WriteLine("The game is a tie");
                     Ties++;
@@ -69,6 +75,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == "Rock" && computerChoice == "Scicors")
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);
                     Console.WriteLine("Rock beats Scicors");
                     Console.WriteLine("Player Wins!");
                     playerWins++;
@@ -76,6 +84,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == "Paper" && computerChoice == "Rock")
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);
                     Console.WriteLine("Paper beats Rock");
                     Console.WriteLine("Player Wins!");
                     playerWins++;
@@ -83,6 +93,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == "Scicors" && computerChoice == "Paper")
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);
                     Console.WriteLine("Scicors beats Paper");
                     Console.WriteLine("Player Wins!");
                     playerWins++;
@@ -90,6 +102,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == "Rock" && computerChoice == "Paper")
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);
                     Console.WriteLine("Paper beats Rock");
                     Console.WriteLine("Computer Wins!");
                     computerWins++;
@@ -97,6 +111,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == "Paper" && computerChoice == "Scicors")
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);
                     Console.WriteLine("Scicors beats Paper");
                     Console.WriteLine("Computer Wins!");
                     computerWins++;
@@ -104,6 +120,8 @@ namespace Obl_Øvelse_FlowControl
 
                 if (playerChoice == "Scicors" && computerChoice == "Rock")
                 {
+                    Console.WriteLine("You Choose: " + playerChoice);
+                    Console.WriteLine("The Computer Choose: " + computerChoice);                    
                     Console.WriteLine("Rock beats Scicors");
                     Console.WriteLine("Computer Wins!");
                     computerWins++;
