@@ -122,6 +122,15 @@ namespace Øvelse_12
             Console.WriteLine("The program will now close");
             Thread.Sleep(2000);
 
+            //Resizing of arrays:
+            //int[] myArray = { 1, 2, 3 };
+            // Extend
+            //Array.Resize(ref myArray, 5); // { 1, 2, 3, 0, 0 }
+            // Shrink
+            //Array.Resize(ref myArray, 2); // { 1, 2 }
+
+            //https://learn.microsoft.com/en-us/dotnet/api/system.array.resize?view=net-8.0
+
         }
     }
 }
