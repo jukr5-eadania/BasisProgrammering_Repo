@@ -23,7 +23,7 @@ namespace Obl_Øvelse_Variabler_DataTyper
             int randomNumber = rnd.Next(1, 101);
 
             //test code to see code
-            //Console.WriteLine(randomNumber);
+            Console.WriteLine(randomNumber);
 
             //Writes a welcome message 
             Console.WriteLine("WELCOME");
@@ -69,7 +69,7 @@ namespace Obl_Øvelse_Variabler_DataTyper
             else
             {
                 //Writes a message about how the player lost
-                Console.WriteLine("and the number is is... ");
+                Console.WriteLine("and the number is... ");
                 Thread.Sleep(milliseconds);
                 Console.WriteLine(randomNumber);
                 Thread.Sleep(milliseconds);
