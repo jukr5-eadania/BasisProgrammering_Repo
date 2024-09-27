@@ -1,70 +1,61 @@
 ﻿using System;
+using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Obl_Øvelse_Arrays_String_Manipulation
 {
-    enum Words
-    {
-        sale,
-        cheese,
-        employee,
-        infect,
-        ambition,
-        voyage,
-        barrier,
-        shame,
-        feminist,
-        preparation,
-        formulate,
-        overlook,
-        copy,
-        advice,
-        demonstrate,
-        border,
-        terminal,
-        teacher,
-        wealth,
-        execution,
-        familiar,
-        build,
-        screen,
-        detail,
-        lamb
-    }
     internal class Program
     {
         //Assign variable
-        static Array values = Enum.GetValues(typeof(Words));
         static Random rnd = new Random();
         static string currentWord = string.Empty;
+        static int rndWord;
+        static string[] words = new string[25] {"sale", "cheese", "employee", "infect", "ambition", "voyage", "barrier", "shame", "feminist", "preparation", "formulate", "overlook", "copy", "advice", "demonstrate", "border", "termnal", "teacher", "wealth", "execution", "familiar", "build", "screen", "detail", "lamb"};
 
         static void Main(string[] args)
         {
             //Assign variable
-            string playing = "y";
-
+            string playing = "n";
+            int life = 3;
+            
             Console.WriteLine("Welcome to the Quizgame!");
             Console.WriteLine("Your goal is to guess a randomly selected word!");
-            Console.WriteLine("You have X lives to guess the word before you die! :D");
+            Console.WriteLine("You have X lives to guess the word before you loose!");
             Console.WriteLine("Do you wanna play? y/n");
+            playing = Console.ReadLine();
 
             while (playing == "y")
             {
-                Console.WriteLine("Ha ha, you don't have a choice anyway. You are playing no matter what");
+                Console.WriteLine("Nice, Lets play");
 
                 SetupWord();
+
+                char myChar = currentWord[3];
+
+                Console.WriteLine(myChar);
+
                 Console.ReadLine();
-
-
             }
+
+            Console.WriteLine("The program will now terminate");
+            Thread.Sleep(1000);
+
         }
 
+        /// <summary>
+        /// Randomizes one of the 25 random words
+        /// </summary>
         static void SetupWord()
         {
-            Words randomword = (Words)values.GetValue(rnd.Next(values.Length));
+            
+            rndWord = rnd.Next(0, 25);
+            currentWord = words[rndWord];
+            Console.WriteLine(currentWord);
+
         }
     }
 }
