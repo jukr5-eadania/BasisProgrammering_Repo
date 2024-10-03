@@ -30,8 +30,6 @@ namespace Obl_Øvelse_Arrays_String_Manipulation
 
             while (playing == "y")
             {
-                Console.WriteLine("Nice, Lets play");
-
                 SetupWord();
 
                 char myChar = currentWord[3];
