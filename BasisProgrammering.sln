@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_12", "Øvelse_12\Ø
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Øvelse_13", "Øvelse_13\Øvelse_13.csproj", "{464380C2-A94B-474D-8C81-E77CA373C23B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obl_Øvelse_Arrays&String_Manipulation", "Obl_Øvelse_Arrays&String_Manipulation\Obl_Øvelse_Arrays&String_Manipulation.csproj", "{074E0B1C-630B-4063-B08A-516310127C0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{464380C2-A94B-474D-8C81-E77CA373C23B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{464380C2-A94B-474D-8C81-E77CA373C23B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{464380C2-A94B-474D-8C81-E77CA373C23B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{074E0B1C-630B-4063-B08A-516310127C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{074E0B1C-630B-4063-B08A-516310127C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{074E0B1C-630B-4063-B08A-516310127C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{074E0B1C-630B-4063-B08A-516310127C0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
